@@ -21,12 +21,12 @@ App.config([
   $routeProvider
 
     .when('/planet/:id', {templateUrl: '/partials/planet.html', controller: 'PlanetCtrl'})
-    .when('/main', {templateUrl: '/partials/main.html', controller: 'MainCtrl'})
+    .when('/identify', {templateUrl: '/partials/identify.html', controller: 'IdentifyCtrl'})
     .when('/codes', {templateUrl: '/partials/codes.html', controller: 'CodesCtrl'})
     .when('/ballpit', {templateUrl: '/partials/ballpit.html', controller: 'BallpitCtrl'})
 
     # Catch all
-    .otherwise({redirectTo: '/main'})
+    .otherwise({redirectTo: '/identify'})
 
   # Without server side support html5 must be disabled.
   $locationProvider.html5Mode(false)

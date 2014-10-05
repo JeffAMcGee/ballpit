@@ -34,7 +34,7 @@ angular.module('app.controllers', [])
       return ''
 ])
 
-.controller('MainCtrl', [
+.controller('IdentifyCtrl', [
   '$scope'
 
 ($scope) ->
