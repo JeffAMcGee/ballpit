@@ -42,10 +42,11 @@ angular.module('app.controllers', [])
 ])
 
 .controller('PlanetCtrl', [
-  '$scope'
+  '$scope', '$routeParams', 'Api'
 
-($scope) ->
-  $scope
+($scope,$routeParams,Api) ->
+  $scope.index = parseInt($routeParams.id,36)
+  $scope.planets = Api.planets.get()
 ])
 
 

@@ -4,4 +4,5 @@
 
 angular.module('app.services', [])
 
-.factory 'version', -> "0.1"
+.factory 'Api', ($resource) ->
+  planets: $resource '/planets.json'
