@@ -20,12 +20,13 @@ App.config([
 
   $routeProvider
 
-    .when('/todo', {templateUrl: '/partials/todo.html'})
-    .when('/view1', {templateUrl: '/partials/partial1.html'})
-    .when('/view2', {templateUrl: '/partials/partial2.html'})
+    .when('/planet/:id', {templateUrl: '/partials/planet.html', controller: 'PlanetCtrl'})
+    .when('/main', {templateUrl: '/partials/main.html', controller: 'MainCtrl'})
+    .when('/codes', {templateUrl: '/partials/codes.html', controller: 'CodesCtrl'})
+    .when('/ballpit', {templateUrl: '/partials/ballpit.html', controller: 'BallpitCtrl'})
 
     # Catch all
-    .otherwise({redirectTo: '/todo'})
+    .otherwise({redirectTo: '/main'})
 
   # Without server side support html5 must be disabled.
   $locationProvider.html5Mode(false)
