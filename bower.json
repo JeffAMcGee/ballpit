@@ -13,6 +13,7 @@
     "jquery": "~2.0.3",
     "bootstrap-less": "~2.3.2",
     "bootstrap-less-themes": "https://github.com/angular-brunch/bootstrap-less-themes.git",
+    "jsqrcode": "https://github.com/JeffAMcGee/jsqrcode.git",
     "angular-bootstrap": "~0.5.0",
     "angular": "1.2.5",
     "angular-sanitize": "1.2.5",
@@ -29,6 +30,27 @@
     },
     "angular-mocks": {
       "main": "README.md"
+    },
+    "jsqrcode": {
+      "main": [
+        "src/grid.js",
+        "src/version.js",
+        "src/detector.js",
+        "src/formatinf.js",
+        "src/errorlevel.js",
+        "src/bitmat.js",
+        "src/datablock.js",
+        "src/bmparser.js",
+        "src/datamask.js",
+        "src/rsdecoder.js",
+        "src/gf256poly.js",
+        "src/gf256.js",
+        "src/decoder.js",
+        "src/qrcode.js",
+        "src/findpat.js",
+        "src/alignpat.js",
+        "src/databr.js"
+      ]
     }
   }
 }
