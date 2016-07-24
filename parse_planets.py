@@ -1,3 +1,4 @@
+from __future__ import print_function
 import json
 import csv
 
@@ -22,5 +23,6 @@ with open('planets.csv') as f:
         for row in reader
     ]
 
-with open('planets.json','w') as outf:
-    print>>outf, json.dumps({'planets':planets})
+with open('ballpit/src/planetData.js','w') as outf:
+    blob = "export default {};".format(json.dumps({'planets':planets}))
+    print(blob, file=outf)

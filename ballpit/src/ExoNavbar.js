@@ -1,11 +1,12 @@
 import React  from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
+
 const ExoNavbar = (props) => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#">React-Bootstrap</a>
+        <a href="#">The Exoplanet Ballpit</a>
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>
